@@ -1,0 +1,71 @@
+body {
+	font-family: sans-serif;
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	font-size: 20px;
+}
+
+input[type=text] {
+	width: 250px;
+	font-size: 20px;
+	padding: 2px;
+}
+
+input[type=password]{
+	width: 250px;
+	font-size: 20px;
+	padding: 2px;
+}
+
+textarea {
+	width: 700px;
+	height: 300px;
+	font-size: 17px;
+	font-family: monospace;
+}
+
+input[type=submit] {
+	display: block;
+	font-size: 24px;
+}
+
+hr {
+	margin: 10px auto;
+}
+
+.error {
+	color: red;
+}
+
+.entry + .entry {
+	margin-top: 50px;
+}
+
+.entry-subject{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.entry-content {
+	margin: 0;
+	font-size: 17px;
+}
+
+.entry-created {
+	font-size: 12px;
+}
+
+.main-title {
+    display: block;
+    color: #222;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/styles.css" />
+		<title>Blog</title>
+	</head>
+	<body>
+	<a href="/" class="main-title"><h1> Blog </h1></a>
+	<hr>
+	<br>
+	<br>
+	<br>
+	{% for entry in entries %}
+		<div class="entry">
+			<hr>
+			<div class="entry-subject">{{entry.subject}}</div>
+			<div class="entry-content">{{entry.content}}</div>
+			<div class="entry-created">{{entry.created.strftime("%b %d, %Y")}}</div>
+		</div>
+	{% endfor %}
+	<br>
+	Queried {{time}} seconds ago
+	</body>
+</html>
